@@ -13,6 +13,9 @@ console.log(finalprice)
 // biglietto over 65
 const ageoldman = 70;  // anni 70
 const discountold = 40; // sconto 40%
-
-
+if (ageoldman > 65) {
+  const discountapplied = baseprice * (discountold / 100)
+  finalprice = baseprice - discountapplied
+}
+console.log(finalprice)
 
