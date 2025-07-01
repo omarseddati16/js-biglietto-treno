@@ -2,8 +2,17 @@ const price = 0.21; // Biglietto costo 0.21
 const km = 100; // km 100
 const age = 10;  // anni 10
 const discount = 20; // sconto 20%
-let price * km; // 21€
+
+let baseprice = price * km; // 21€
+
+let finalprice = baseprice
 
 if (age < 18) {
-
+  const discountapplied = baseprice * (discount / 100);
+  finalprice = baseprice - discountapplied;
 }
+
+console.log(finalprice)
+
+
+
